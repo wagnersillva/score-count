@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+.layout-template-step-header {
+  color: #FFF !important;
+}
+
+.layout-template-step-main {
+  height: calc( 100vh - 65px);
+}
+
+.layout-template-step-main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.configurations-template,
+.dashboard-template {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-start;
+  padding-inline: 15px;
+  gap: 50px;
+}
+
+.dashboard-template {
+  max-height: calc(80vh);
+  overflow-x: hidden;
+  overflow-y: auto;
+  gap: 0;
+}
+
+.configurations-col-list-cards,
+.dashboard-col-list-cards {
+  height: max-content;
+  max-height: calc(50vh);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.configurations-list-cards,
+.dashboard-list-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.configurations-list-cards-item {
+  width: 290px;
+  /*transition: 0.2s;*/
+}
+
+.configurations-list-cards-item:hover,
+.configurations-list-cards-item:hover .ant-card-actions {
+  cursor: pointer;
+  background: #00152917 !important;
+}
+
+.configurations-list-cards-item.config-escolhida,
+.configurations-list-cards-item.config-escolhida .ant-card-actions {
+  background: #0015290f;
+}
+
+.configurations-template .ant-list-item {
+  margin-block: 30px !important;
+}
+
+.button-primary {
+  background: #031e38;
+  color: #FFFFFF;
+}
+
+.button-general,
+.button-steps,
+.button-primary {
+  padding: 0 36px;
+  height: 45px;
+  border-radius: 25px;
+}
+
+.button-steps:hover:not([disabled]) {
+  color: #042e56 !important;
+  border-color: #042e56 !important;
+}
+
+.button-primary:hover:not([disabled]) {
+  background: #042e56;
+  color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+}
